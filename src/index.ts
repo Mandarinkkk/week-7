@@ -1,4 +1,4 @@
-
+import { maxWater, checkNonNegativity, checkDataType } from './chart';
  
 const main = () => { 
   let result = document.getElementById("result") as HTMLDivElement; 
