@@ -1,4 +1,4 @@
-function maxWater(height: Array<number>): number { 
+export function maxWater(height: Array<number>): number { 
     let left = 0; 
     let right = height.length - 1; 
     let maxVolume = 0; 
@@ -13,10 +13,10 @@ function maxWater(height: Array<number>): number {
     return maxVolume; 
   } 
   
-  function checkNonNegativity(heights: number[]): boolean {
+export function checkNonNegativity(heights: number[]): boolean {
     return heights.every(height => height >= 0);
   }
   
-  function checkDataType(heights: string[]): boolean {
+export  function checkDataType(heights: string[]): boolean {
     return heights.every(height => !isNaN(Number(height)));
   }
